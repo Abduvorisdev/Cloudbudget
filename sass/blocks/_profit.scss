@@ -1,0 +1,18 @@
+.profit{
+    background-color: #ED4C5C;
+    padding: 100px 0;
+    margin-top: 108px ;
+    &__wrapper{
+        @include flex(flex, space-between, center)
+    }
+    &__right-img{
+        width: 445px;
+        height: 311px;
+    }
+    &__title{
+        margin-bottom: 24px;
+    }
+    &__info{
+        margin-bottom: 42px;
+    }
+}

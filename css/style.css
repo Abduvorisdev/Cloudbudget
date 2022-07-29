@@ -1,0 +1,513 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1110px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 500;
+}
+.title--white {
+  color: white;
+}
+
+.descr {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+}
+.descr--white {
+  color: white;
+}
+
+.header {
+  background: url(../img/header-bg.png) center center/cover no-repeat;
+  height: 782px;
+}
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 59px;
+}
+.header__list {
+  display: flex;
+  gap: 15px;
+}
+.header__link {
+  transition: 0.1s;
+  color: white;
+}
+.header__link:hover {
+  border-bottom: 2px solid white;
+}
+.header__title {
+  color: white;
+  font-size: 72px;
+  font-weight: 700;
+}
+.header__content {
+  text-align: center;
+  margin-top: 177px;
+}
+.header__content-text {
+  color: white;
+  line-height: 36px;
+  font-size: 24px;
+  width: 540px;
+  margin: 0 auto;
+}
+.header__content-link {
+  margin: 0 auto;
+  margin-top: 45px;
+}
+.header__content-text {
+  margin-top: 45px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+.btn--large {
+  width: 160px;
+  height: 50px;
+}
+.btn--mini {
+  width: 100px;
+  height: 40px;
+}
+.btn--white {
+  color: #ED4C5C;
+  background: #fff;
+}
+.btn--white:hover {
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+.btn--transparent {
+  background: transparent;
+  border: 1px solid #FFFFFF;
+}
+.btn--transparent:hover {
+  background-color: palevioletred;
+}
+
+.app {
+  padding-bottom: 50px;
+}
+.app__wrapper {
+  margin-top: 94px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.app__left {
+  width: 445px;
+}
+.app__right img {
+  width: 445px;
+  height: 311px;
+}
+.app__text {
+  margin-top: 30px;
+  width: 445px;
+}
+.app__link {
+  margin-top: 15px;
+  display: inline-block;
+  color: #ED4C5C;
+}
+.app__link:hover {
+  color: orangered;
+}
+
+.offers {
+  background-color: #FAFAFA;
+  padding: 63px 0px 0px 0px;
+}
+.offers__title {
+  text-align: center;
+}
+.offers__img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.offers__item {
+  margin-top: 70px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+}
+.offers__item--first {
+  background-image: url(../img/offers1.png);
+}
+.offers__item--second {
+  background-image: url(../img/offers2.png);
+}
+.offers__item--third {
+  background-image: url(../img/offers3.png);
+}
+.offers__card {
+  text-align: center;
+  width: 293px;
+  height: 198px;
+  background-color: white;
+  padding: 26px 32px;
+  margin: 0 auto;
+  border-radius: 8px;
+  margin-top: 157px;
+}
+.offers__descr {
+  margin-top: 20px;
+  font-size: 12px;
+  line-height: 150%;
+}
+.offers__link {
+  margin-top: 8px;
+  display: inline-block;
+  color: #ED4C5C;
+}
+.offers__link:hover {
+  color: orangered;
+}
+
+.tech__wrapper {
+  margin-top: 63px;
+}
+.tech__descr-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-top: 60px;
+}
+.tech__title {
+  text-align: center;
+}
+.tech__descr-info {
+  margin-bottom: 10px;
+}
+.tech__descr-info:hover {
+  color: orangered;
+}
+.tech__descr-p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.profit {
+  background-color: #ED4C5C;
+  padding: 100px 0;
+  margin-top: 108px;
+}
+.profit__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.profit__right-img {
+  width: 445px;
+  height: 311px;
+}
+.profit__title {
+  margin-bottom: 24px;
+}
+.profit__info {
+  margin-bottom: 42px;
+}
+
+.feedback {
+  padding: 184px 0;
+}
+.feedback__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.feedback__left {
+  width: 445px;
+}
+.feedback__title {
+  margin-bottom: 35px;
+}
+.feedback__form {
+  display: flex;
+  flex-direction: column;
+}
+.feedback__input {
+  width: 540px;
+  padding: 21px 35px;
+  border-radius: 6px;
+  margin-top: 24px;
+}
+.feedback__input:focus {
+  outline: none;
+  border-color: blue;
+}
+.feedback__submit-btn {
+  background-color: #ED4C5C;
+  margin-top: 24px;
+}
+.feedback__submit-btn:hover {
+  background-color: transparent;
+  border: 1px solid #000;
+  color: black;
+}
+
+.addres__descr {
+  margin: 19px 0px 45px 0px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 880px;
+  }
+  .app__right img {
+    width: 400px;
+    height: 290px;
+  }
+  .profit__right img {
+    width: 380px;
+  }
+  .offers__item {
+    width: 280px;
+  }
+  .offers__card {
+    width: 250px;
+    padding: 26px 20px;
+  }
+  .feedback__input {
+    width: 370px;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    max-width: 690px;
+  }
+  .header__list {
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    padding: 20px 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.6s all;
+    margin: 0;
+  }
+  .header__list--active {
+    left: 0;
+  }
+  .header__btn-link {
+    display: none;
+  }
+  .header__burger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 12px;
+  }
+  .header__burger--active span {
+    margin-bottom: -2px;
+  }
+  .header__burger--active span:nth-child(1) {
+    transform: translateY(2px) rotate(-45deg);
+  }
+  .header__burger--active span:nth-child(2) {
+    display: none;
+  }
+  .header__burger--active span:nth-child(3) {
+    transform: translateY(2px) rotate(45deg);
+  }
+  .header__burger-line {
+    display: block;
+    margin-bottom: 5px;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    transition: 0.5s all;
+    background-color: white;
+  }
+  .app__title {
+    font-size: 18px;
+  }
+  .app__text {
+    width: 380px;
+    font-size: 12px;
+  }
+  .app__right img {
+    width: 300px;
+    height: 250px;
+  }
+  .offers__item {
+    width: 220px;
+  }
+  .offers__card {
+    width: 200px;
+    height: 220px;
+    padding: 26px 10px;
+  }
+  .tech__descr-info {
+    font-size: 14px;
+  }
+  .tech__descr-p {
+    font-size: 12px;
+  }
+  .profit__title {
+    font-size: 26px;
+  }
+  .profit__right img {
+    width: 320px;
+  }
+  .feedback__descr {
+    font-size: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 520px;
+  }
+  .header__content-text {
+    font-size: 18px;
+    width: 500px;
+  }
+  .app__right img {
+    width: 210px;
+    height: 215px;
+  }
+  .app__text {
+    width: 300px;
+  }
+  .offers__img {
+    padding: 70px 0px;
+    flex-wrap: wrap;
+  }
+  .offers__item {
+    margin: 0 auto;
+  }
+  .tech__descr-inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .tech__descr {
+    padding-bottom: 15px;
+  }
+  .profit__title {
+    font-size: 22px;
+  }
+  .profit__right img {
+    width: 260px;
+    height: 210px;
+    margin-bottom: 15px;
+  }
+  .profit__app-icons {
+    text-align: center;
+    margin-top: 60px;
+  }
+  .feedback__title {
+    text-align: center;
+  }
+  .feedback__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .feedback__input {
+    width: 450px;
+  }
+  .feedback__input:nth-child(2) {
+    margin-bottom: 30px;
+  }
+  .feedback__submit-btn {
+    margin: 0 auto;
+  }
+  .addres {
+    text-align: center;
+  }
+}
+@media (max-width: 575px) {
+  .container {
+    max-width: 280px;
+  }
+  .header__title {
+    font-size: 45px;
+  }
+  .header__content-text {
+    width: 200px;
+  }
+  .app__title {
+    font-size: 22px;
+  }
+  .app__text {
+    max-width: 280px;
+  }
+  .app__wrapper {
+    flex-wrap: wrap;
+  }
+  .app__right img {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .offers__item {
+    margin-bottom: 150px;
+    width: 100%;
+  }
+  .offers__card {
+    width: 100%;
+  }
+  .profit__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .profit__left {
+    text-align: center;
+  }
+  .profit__right img {
+    width: 100%;
+  }
+  .feedback__input {
+    width: 280px;
+  }
+  .feedback__descr {
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */

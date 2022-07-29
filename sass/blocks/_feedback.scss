@@ -1,0 +1,37 @@
+.feedback{
+    padding: 184px 0;
+    &__wrapper{
+        @include flex(flex, space-between, center)
+    }
+    &__left{
+        width: 445px;
+    }
+    &__title{
+        margin-bottom: 35px;
+    }
+    &__form{
+        display: flex;
+        flex-direction: column;
+    }
+    &__input{
+        width: 540px;
+        padding: 21px 35px;
+        border-radius: 6px;   
+        margin-top: 24px; 
+        &:focus{
+            outline: none;
+            border-color: blue;
+        }
+    }
+    &__submit-btn{
+        background-color: #ED4C5C;
+        margin-top: 24px;
+        
+        &:hover{
+            background-color: transparent;
+            border: 1px solid #000;
+            color: black;
+        }
+    }
+
+}

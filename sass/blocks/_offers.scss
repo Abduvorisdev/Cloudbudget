@@ -1,0 +1,51 @@
+.offers{
+    background-color: #FAFAFA;
+    padding: 63px 0px 0px 0px;
+    &__title{
+        text-align: center;
+
+    }
+    &__img{
+        @include flex(flex, space-between, center);
+       
+    }
+    &__item{
+        margin-top: 70px;
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        height: 250px;
+        &--first{
+            background-image: url(../img/offers1.png);
+        }
+        &--second{
+            background-image: url(../img/offers2.png);
+        }
+        &--third{
+            background-image: url(../img/offers3.png);
+        }
+    }
+    &__card{
+        text-align: center;
+        width: 293px;
+        height: 198px;
+        background-color: white;
+        padding: 26px 32px;
+        margin: 0 auto;
+        border-radius: 8px;
+        margin-top: 157px;
+    }
+    &__descr{
+        margin-top: 20px;
+        font-size: 12px;
+        line-height: 150%;
+    }
+    &__link{
+        margin-top: 8px;
+        display: inline-block;
+        color: #ED4C5C;
+        &:hover{
+            color: orangered;
+        }
+    }
+}

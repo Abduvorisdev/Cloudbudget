@@ -1,0 +1,336 @@
+@media (max-width: 1200px) {
+    .container {
+        max-width: 880px;
+    }
+
+    .app {
+        &__right {
+            img {
+                width: 400px;
+                height: 290px;
+            }
+        }
+    }
+
+    .profit {
+        &__right {
+            img {
+                width: 380px;
+            }
+        }
+    }
+
+    .offers {
+        &__item {
+            width: 280px;
+        }
+
+        &__card {
+            width: 250px;
+            padding: 26px 20px;
+        }
+    }
+
+    .feedback {
+        &__input {
+            width: 370px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 690px;
+    }
+
+    .header {
+        &__list {
+            position: fixed;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100vh;
+            padding: 20px 15px;
+            background-color: rgba(0, 0, 0, .8);
+            transition: 0.6s all;
+            margin: 0;
+            &--active{
+                left: 0;
+            }
+        }
+
+        &__btn-link {
+            display: none;
+        }
+
+        &__burger {
+            display: block;
+            position: absolute;
+            right: 10px;
+            transform: translateY(-50%);
+            width: 26px;
+            height: 12px;
+
+            &--active {
+                span {
+                    margin-bottom: -2px;
+
+                    &:nth-child(1) {
+                        transform: translateY(2px) rotate(-45deg);
+                    }
+
+                    &:nth-child(2) {
+                        display: none;
+                    }
+
+                    &:nth-child(3) {
+                        transform: translateY(2px) rotate(45deg);
+                    }
+                }
+            }
+
+        }
+
+        &__burger-line {
+            display: block;
+            margin-bottom: 5px;
+            height: 2px;
+            width: 100%;
+            background-color: #fff;
+            transition: 0.5s all;
+            background-color: white;
+        }
+    }
+
+    .app {
+        &__title {
+            font-size: 18px;
+        }
+
+        &__text {
+            width: 380px;
+            font-size: 12px;
+        }
+
+        &__right {
+            img {
+                width: 300px;
+                height: 250px;
+            }
+        }
+    }
+
+    .offers {
+        &__item {
+            width: 220px;
+        }
+
+        &__card {
+            width: 200px;
+            height: 220px;
+            padding: 26px 10px;
+
+        }
+    }
+
+    .tech {
+        &__descr-info {
+            font-size: 14px;
+        }
+
+        &__descr-p {
+            font-size: 12px;
+        }
+    }
+
+    .profit {
+        &__title {
+            font-size: 26px;
+        }
+
+        &__right {
+            img {
+                width: 320px;
+            }
+        }
+    }
+
+    .feedback {
+        &__descr {
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        max-width: 520px;
+    }
+
+    .header {
+        &__content-text {
+            font-size: 18px;
+            width: 500px;
+        }
+    }
+
+    .app {
+        &__right {
+            img {
+                width: 210px;
+                height: 215px;
+            }
+        }
+
+        &__text {
+            width: 300px;
+        }
+    }
+
+    .offers {
+        &__img {
+            padding: 70px 0px;
+            flex-wrap: wrap;
+        }
+
+        &__item {
+            margin: 0 auto;
+        }
+    }
+
+    .tech {
+        &__descr-inner {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        &__descr {
+            padding-bottom: 15px;
+        }
+    }
+
+    .profit {
+        &__title {
+            font-size: 22px;
+        }
+
+        &__right {
+            img {
+                width: 260px;
+                height: 210px;
+                margin-bottom: 15px;
+            }
+        }
+
+        &__app-icons {
+            text-align: center;
+            margin-top: 60px;
+        }
+    }
+
+    .feedback {
+        &__title {
+            text-align: center;
+        }
+
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__input {
+            width: 450px;
+
+            &:nth-child(2) {
+                margin-bottom: 30px;
+            }
+        }
+
+        &__submit-btn {
+            margin: 0 auto;
+        }
+    }
+
+    .addres {
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 575px) {
+    .container {
+        max-width: 280px;
+    }
+
+    .header {
+        &__title {
+            font-size: 45px;
+        }
+
+        &__content-text {
+            width: 200px;
+        }
+    }
+
+    .app {
+        &__title {
+            font-size: 22px;
+        }
+
+        &__text {
+            max-width: 280px;
+        }
+
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+
+        &__right {
+            img {
+                width: 100%;
+                margin-top: 30px;
+            }
+        }
+    }
+
+    .offers {
+        &__item {
+            margin-bottom: 150px;
+            width: 100%;
+        }
+        &__card {
+            width: 100%;
+        }
+    }
+
+    .profit {
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__left {
+            text-align: center;
+        }
+
+        &__right {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .feedback {
+        &__input {
+            width: 280px;
+        }
+
+        &__descr {
+            text-align: center;
+        }
+    }
+}

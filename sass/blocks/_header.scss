@@ -1,0 +1,45 @@
+.header{
+    background: url(../img/header-bg.png) center center / cover no-repeat;
+    height: 782px;
+    &__top{
+        @include flex(flex, space-between, center);
+        padding-top: 59px;
+    }
+    &__list{
+        display: flex;
+        gap: 15px;
+    }
+    &__link{
+        transition: .1s ;
+        color: white;
+        &:hover{
+            border-bottom: 2px solid white;
+        }
+    }
+    &__title{
+        color: white;
+        font-size: 72px;
+        font-weight: 700;
+    }
+    &__content{
+        text-align: center;
+        margin-top: 177px;
+        
+    }
+    &__content-text{
+        color: white;
+        line-height: 36px;
+        font-size: 24px;
+        width: 540px;
+        margin: 0 auto;
+    }
+    &__content-link{
+        margin: 0 auto;
+        margin-top: 45px;
+        
+    }
+    &__content-text{
+        margin-top: 45px;
+    }
+}
+

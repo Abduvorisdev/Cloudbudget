@@ -1,0 +1,25 @@
+.tech{
+    &__wrapper{
+        margin-top: 63px;
+    }
+    &__descr-inner{ 
+        @include flex(flex, space-between, center);
+        text-align: center;
+        margin-top: 60px;
+    }
+    &__title{
+        text-align: center;
+    }
+    &__descr-info{
+        margin-bottom: 10px;
+        &:hover{
+            color: orangered;
+        }
+    }
+    &__descr-p{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+    }
+
+}

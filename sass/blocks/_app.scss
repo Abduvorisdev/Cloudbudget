@@ -1,0 +1,31 @@
+.app {
+    padding-bottom: 50px;
+    &__wrapper {
+        margin-top: 94px;
+        @include flex(flex, space-between, center)
+    }
+    &__left{
+        width: 445px;
+    }
+    &__right{
+        img{
+            width: 445px;
+            height: 311px;
+            
+        }
+    }
+    &__text {
+        margin-top: 30px;
+        width: 445px;
+        
+    }
+    
+    &__link{
+        margin-top: 15px;
+        display: inline-block;
+        color: #ED4C5C;
+        &:hover{
+            color: orangered;
+        }
+    }
+}

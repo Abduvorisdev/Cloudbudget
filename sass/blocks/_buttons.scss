@@ -1,0 +1,44 @@
+.btn {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-radius: 6px;
+    transition: .2s;
+
+
+    &--large {
+        width: 160px;
+        height: 50px;
+    }
+
+    &--mini {
+        width: 100px;
+        height: 40px;
+    }
+
+    &--white {
+        color: #ED4C5C;
+        background: #fff;
+
+        &:hover {
+
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+        }
+    }
+
+    &--transparent {
+        background: transparent;
+        border: 1px solid #FFFFFF;
+
+        &:hover {
+            background-color: palevioletred;
+        }
+    }
+}

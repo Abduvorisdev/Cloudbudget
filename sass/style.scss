@@ -1,0 +1,55 @@
+@import 'base/mixins';
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1110px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.title{
+    font-size: 36px;
+    font-weight: 500;
+    &--white{
+        color: white;
+    }
+}
+
+.descr{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    &--white{
+        color: white;
+    }
+}
+
+@import 'blocks/header';
+@import 'blocks/buttons';
+@import 'blocks/app';
+@import 'blocks/offers';
+@import 'blocks/tech';
+@import 'blocks/profit';
+@import 'blocks/feedback';
+@import 'blocks/addres';
+@import 'base/media';
+
